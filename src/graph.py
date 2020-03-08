@@ -33,6 +33,9 @@ class Graph:
     def __iter__(self):
         return iter(self._vert_dict.values())
 
+    def get_num_vertices(self):
+        return self._num_vertices
+
     def add_vertex(self, node):
         self._num_vertices = self._num_vertices + 1
         new_vertex = Vertex(node)

@@ -1,2 +1,6 @@
 ## IDEA files ##
 *.idea
+
+## Python files ##
+*.pyc
+*.pyo
