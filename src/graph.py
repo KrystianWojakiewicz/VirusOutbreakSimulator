@@ -20,15 +20,12 @@ class Vertex:
 
 
 class Graph:
-    def __init__(self):
+    def __init__(self, number_of_vertices=None):
         self._vert_dict = {}
         self._num_vertices = 0
-
-    def __init__(self, number_of_vertices):
-        self._vert_dict = {}
-        self._num_vertices = 0
-        for vertex in range(number_of_vertices):
-            self.add_vertex(vertex)
+        if number_of_vertices:
+            for vertex in range(number_of_vertices):
+                self.add_vertex(vertex)
 
     def __iter__(self):
         return iter(self._vert_dict.values())
